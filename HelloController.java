@@ -16,8 +16,7 @@ public class HelloController {
     private void convertRupeeToCAD() {
         try {
             double rupees = Double.parseDouble(rupeeTextField.getText());
-            double conversionRate = 0.01671682; // 1 INR = 0.01671682 CAD
-            double cad = rupees * conversionRate;
+            double cad = CurrencyConverter.convertINRToCAD(rupees);
             resultLabel.setText(String.format("%.2f INR = %.2f CAD", rupees, cad));
         } catch (NumberFormatException e) {
             resultLabel.setText("Invalid input. Please enter a number.");
