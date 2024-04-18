@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="com.example.ass3java.HelloController"
+            xmlns:fx="http://javafx.com/fxml" prefWidth="400" prefHeight="300">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Indian Rupee to Canadian Dollar Converter" />
+            <TextField fx:id="rupeeTextField" promptText="Enter amount in Rupees" />
+            <Button text="Convert" onAction="#convertRupeeToCAD" />
+            <Label fx:id="resultLabel" />
+        </VBox>
+    </center>
+</BorderPane>
